@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{C38E5465-F650-41AA-9808-B3CA6C01A1C9}</ProjectGuid>
-    <RootNamespace>Offer</RootNamespace>
+    <ProjectGuid>{35A408E2-503B-4334-87DA-E3138BD535D2}</ProjectGuid>
+    <RootNamespace>My11</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,7 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="offer.cpp" />
+    <ClCompile Include="11.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

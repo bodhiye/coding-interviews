@@ -32,7 +32,7 @@ int main()
 	L->next = NULL;
 	cin >> n;
 	for (int i = 0; i < n; i++)
-	{
+	{//带头结点的头插法
 		ListNode *p = new ListNode;
 		cin >> p->val;
 		p->next = L->next;

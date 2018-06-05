@@ -3,7 +3,6 @@
 
 using namespace std;
 
-//·ÇµÝ¹é½â·¨
 //bool VerifySquenceOfBST(vector<int> sequence)
 //{
 //	int len = sequence.size();

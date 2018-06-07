@@ -3,55 +3,44 @@
 
 using namespace std;
 
-int partition(vector<int>& a, int left, int right)
+int MoreThanHalfNum_Solution(vector<int> numbers)
 {
-	int pivot = a[left];
-	while (left < right)
+	int len = numbers.size();
+	int count = 0, ans;
+	for (int i = 0; i < len; i++)
 	{
-		while (left < right&&a[right] >= pivot)
-			right--;
-		a[left] = a[right];
-		while (left < right&&a[left] <= pivot)
-			left++;
-		a[right] = a[left];
-	}
-	a[left] = pivot;
-	return left;
-}
-
-vector<int> GetLeastNumbers_Solution(vector<int> input, int k)
-{
-	vector<int> v;
-	int len = input.size();
-	if (len == 0 || k > len || k <= 0) return v;
-	int left = 0, right = len - 1;
-	int pos = partition(input, left, right);
-	while (pos != k - 1)
-	{
-		if (pos > k - 1)
-			right = pos - 1;
+		if (!count)
+		{
+			ans = numbers[i];
+			count = 1;
+		}
 		else
-			left = pos + 1;
-		pos = partition(input, left, right);
+		{
+			if (ans == numbers[i])
+				count++;
+			else
+				count--;
+		}
 	}
-	for (int i = 0; i < k; i++)
-		v.push_back(input[i]);
-	return v;
+	count = 0;
+	for (int i = 0; i < len; i++)
+		if (numbers[i] == ans)count++;
+	if (count * 2 > len)
+		return ans;
+	return 0;
 }
 
 int main()
 {
 	ios::sync_with_stdio(false);
-	vector<int> input, v;
-	int n, k, temp;
-	cin >> n >> k;
+	int n, temp;
+	vector<int> v;
+	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		cin >> temp;
-		input.push_back(temp);
+		v.push_back(temp);
 	}
-	v = GetLeastNumbers_Solution(input, k);
-	for (int i = 0; i < k; i++)
-		cout << v[i] << ',';
+	cout << MoreThanHalfNum_Solution(v);
 	return 0;
 }

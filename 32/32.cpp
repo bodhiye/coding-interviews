@@ -37,6 +37,6 @@ int main()
 		cin >> temp;
 		v.push_back(temp);
 	}
-	cout << PrintMinNumber(v);
+	cout << PrintMinNumber(v) << endl;
 	return 0;
 }

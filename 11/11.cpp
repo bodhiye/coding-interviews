@@ -18,6 +18,6 @@ int main()
 	ios::sync_with_stdio(false);
 	int n;
 	cin >> n;
-	cout << NumberOf1(n);
+	cout << NumberOf1(n) << endl;
 	return 0;
 }

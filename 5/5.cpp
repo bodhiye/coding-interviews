@@ -80,5 +80,6 @@ int main()
 	{
 		cout << pop2() << " ";
 	}
+	cout << endl;
 	return 0;
 }

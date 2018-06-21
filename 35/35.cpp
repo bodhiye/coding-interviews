@@ -55,6 +55,6 @@ int main()
 		cin >> tmp;
 		a.push_back(tmp);
 	}
-	cout << InversePairs(a);
+	cout << InversePairs(a) << endl;
 	return 0;
 }

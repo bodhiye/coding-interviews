@@ -25,6 +25,6 @@ int main()
 		cin >> temp;
 		a.push_back(temp);
 	}
-	cout << FindGreatestSumOfSubArray(a);
+	cout << FindGreatestSumOfSubArray(a) << endl;
 	return 0;
 }

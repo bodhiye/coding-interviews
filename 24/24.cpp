@@ -65,5 +65,6 @@ int main()
 			cout << *ite << " ";
 		cout << endl;
 	}
+	cout << endl;
 	return 0;
 }

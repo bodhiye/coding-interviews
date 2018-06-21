@@ -21,6 +21,6 @@ int main()
 	double a;
 	int b;
 	cin >> a >> b;
-	cout << power(a, b);
+	cout << power(a, b) << endl;
 	return 0;
 }

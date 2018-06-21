@@ -65,5 +65,6 @@ int main()
 	vector<int>::iterator it;
 	for (it = dev.begin(); it != dev.end(); ++it)
 		cout << *it << " ";
+	cout << endl;
 	return 0;
 }

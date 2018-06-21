@@ -26,6 +26,6 @@ int main()
 	cin.get(a, 1001);
 	int len = strlen(a);
 	replaceSpace(a, len);
-	cout << a;
+	cout << a << endl;
 	return 0;
 }

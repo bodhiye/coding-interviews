@@ -61,5 +61,6 @@ int main()
 	TreeNode *head;
 	head = reConstructBinaryTree(pre_vec, vin_vec);
 	inorder(head);
+	cout << endl;
 	return 0;
 }

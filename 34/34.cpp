@@ -22,6 +22,6 @@ int main()
 	ios::sync_with_stdio(false);
 	string s;
 	cin >> s;
-	cout << FirstNotRepeatingChar(s);
+	cout << FirstNotRepeatingChar(s) << endl;
 	return 0;
 }

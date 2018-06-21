@@ -45,6 +45,6 @@ int main()
 		cin >> temp;
 		v.push_back(temp);
 	}
-	cout << VerifySquenceOfBST(v);
+	cout << VerifySquenceOfBST(v) << endl;
 	return 0;
 }

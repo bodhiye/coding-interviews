@@ -54,5 +54,6 @@ int main()
 	pRoot = newTree();
 	Mirror(pRoot);
 	preOrder(pRoot);
+	cout << endl;
 	return 0;
 }

@@ -40,6 +40,6 @@ int main()
 			break;
 		push(temp);
 	}
-	cout << min();
+	cout << min() << endl;
 	return 0;
 }

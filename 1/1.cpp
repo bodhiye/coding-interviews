@@ -36,6 +36,6 @@ int main()
 		array.push_back(v);
 		v.clear();
 	}
-	cout << find(target, array);
+	cout << find(target, array) << endl;
 	return 0;
 }

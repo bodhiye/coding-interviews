@@ -17,6 +17,6 @@ int main()
 	ios::sync_with_stdio(false);
 	int n;
 	cin >> n;
-	cout << Fibonacci(n);
+	cout << Fibonacci(n) << endl;
 	return 0;
 }

@@ -51,6 +51,6 @@ int main()
 	TreeNode* pRoot2 = NULL;
 	pRoot1 = newTree();
 	pRoot2 = newTree();
-	cout << HasSubtree(pRoot1, pRoot2);
+	cout << HasSubtree(pRoot1, pRoot2) << endl;
 	return 0;
 }

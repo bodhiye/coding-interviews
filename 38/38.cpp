@@ -38,6 +38,6 @@ int main()
 	ios::sync_with_stdio(false);
 	TreeNode* root = NULL;
 	root = newTree();
-	cout << TreeDepth(root);
+	cout << TreeDepth(root) << endl;
 	return 0;
 }

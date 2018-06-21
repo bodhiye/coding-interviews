@@ -53,5 +53,6 @@ int main()
 	v = GetLeastNumbers_Solution(input, k);
 	for (int i = 0; i < k; i++)
 		cout << v[i] << ',';
+	cout << endl;
 	return 0;
 }

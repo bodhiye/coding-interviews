@@ -39,6 +39,6 @@ int main()
 		L->next = p;
 	}
 	cin >> k;
-	cout << FindKthToTail(L, k)->val;
+	cout << FindKthToTail(L, k)->val << endl;
 	return 0;
 }

@@ -34,6 +34,6 @@ int main()
 		cin >> temp;
 		v.push_back(temp);
 	}
-	cout << minNumberInRotateArray(v);
+	cout << minNumberInRotateArray(v) << endl;
 	return 0;
 }

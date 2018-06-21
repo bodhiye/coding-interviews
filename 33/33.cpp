@@ -25,6 +25,6 @@ int main()
 	ios::sync_with_stdio(false);
 	int n;
 	cin >> n;
-	cout << GetUglyNumber_Solution(n);
+	cout << GetUglyNumber_Solution(n) << endl;
 	return 0;
 }

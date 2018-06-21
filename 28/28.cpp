@@ -41,6 +41,6 @@ int main()
 		cin >> temp;
 		v.push_back(temp);
 	}
-	cout << MoreThanHalfNum_Solution(v);
+	cout << MoreThanHalfNum_Solution(v) << endl;
 	return 0;
 }

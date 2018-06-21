@@ -43,5 +43,6 @@ int main()
 	vector<int>::iterator it;
 	for (it = res.begin(); it != res.end(); it++)
 		cout << *it << " ";
+	cout << endl;
 	return 0;
 }

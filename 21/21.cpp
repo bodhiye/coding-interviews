@@ -35,6 +35,6 @@ int main()
 		cin >> temp;
 		popV.push_back(temp);
 	}
-	cout << IsPopOrder(pushV, popV);
+	cout << IsPopOrder(pushV, popV) << endl;
 	return 0;
 }

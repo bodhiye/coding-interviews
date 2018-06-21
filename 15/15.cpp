@@ -47,5 +47,6 @@ int main()
 		cout << L->val << " ";
 		L = L->next;
 	}
+	cout << endl;
 	return 0;
 }

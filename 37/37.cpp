@@ -51,6 +51,6 @@ int main()
 		v.push_back(temp);
 	}
 	cin >> k;
-	cout << getNumberOfK(v, k) << endl;
+	cout << getNumberOfK(v, k);
 	return 0;
 }

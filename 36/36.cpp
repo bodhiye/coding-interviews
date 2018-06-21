@@ -45,6 +45,6 @@ int main()
 	ios::sync_with_stdio(false);
 	ListNode* L1 = newList();
 	ListNode* L2 = newList();
-	cout << FindFirstCommonNode(L1, L2)->val;
+	cout << FindFirstCommonNode(L1, L2)->val << endl;
 	return 0;
 }

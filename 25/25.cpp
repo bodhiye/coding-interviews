@@ -28,7 +28,7 @@ RandomListNode* newList()
 	}
 	q->next = NULL;
 	q->random = NULL;
-	return L;
+	return L->next;
 }
 
 RandomListNode* Clone(RandomListNode* pHead)
@@ -67,7 +67,7 @@ int main()
 	ios::sync_with_stdio(false);
 	RandomListNode* L1 = newList();
 	RandomListNode* L2 = Clone(L1);
-	RandomListNode* p = L2->next;
+	RandomListNode* p = L2;
 	while (p)
 	{
 		cout << p->label << " ";

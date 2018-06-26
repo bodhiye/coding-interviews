@@ -25,7 +25,7 @@ ListNode* newList()
 		q = p;
 	}
 	q->next = NULL;
-	return q;
+	return L->next;
 }
 
 ListNode* FindFirstCommonNode(ListNode* pHead1, ListNode* pHead2)

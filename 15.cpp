@@ -34,7 +34,7 @@ int main()
 	ListNode *q = L;
 	cin >> n;
 	for (int i = 0; i < n; i++)
-	{//带头结点的尾插法
+	{
 		ListNode *p = new ListNode;
 		cin >> p->val;
 		q->next = p;

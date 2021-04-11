@@ -22,7 +22,7 @@ func findRepeatNumber(nums []int) int {
 // 原地置换法
 func findRepeatNumber2(nums []int) int {
 	for i, num := range nums {
-		for nums[i] != i {
+		if nums[i] != i {
 			if nums[i] == num {
 				return nums[i]
 			}

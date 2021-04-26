@@ -3,9 +3,11 @@
 
 using namespace std;
 
-vector<int> printMatrix(vector<vector<int> > matrix)
+vector<int> printMatrix(vector<vector<int> >& matrix)
 {
 	vector<int> res;
+    if (matrix.size() < 1 || matrix[0].size() < 1)
+        return res;
 	int row = matrix.size(), col = matrix[0].size();
 	int circle = ((row < col ? row : col) + 1) / 2;
 	for (int i = 0; i < circle; i++)
@@ -25,24 +27,24 @@ vector<int> printMatrix(vector<vector<int> > matrix)
 int main()
 {
 	ios::sync_with_stdio(false);
-	vector<vector<int> > vv;
-	vector<int> res, v;
-	int n, m, temp;
-	cin >> n >> m;
-	for (int i = 0; i < n; i++)
+    int a[][5] = {
+		{1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9},
+	};
+	vector<vector<int> > matrix(3, vector<int> (3, 0));
+	for (int m = 0; m < matrix.size(); m++)
 	{
-		v.clear();
-		for (int j = 0; j < m; j++)
+		for (int n = 0; n < matrix[m].size(); n++)
 		{
-			cin >> temp;
-			v.push_back(temp);
+			matrix[m][n] = a[m][n];
 		}
-		vv.push_back(v);
 	}
-	res = printMatrix(vv);
-	vector<int>::iterator it;
+    vector<int> res;
+    res = printMatrix(matrix);
+    vector<int>::iterator it;
 	for (it = res.begin(); it != res.end(); it++)
 		cout << *it << " ";
-	cout << endl;
+    cout << endl;
 	return 0;
 }
